@@ -24,6 +24,8 @@ def on_message(client, userdata, msg):
     print("Your message:" + data) #display received message
     ss = data.split(' ')
     print(ss)
+    opensnz.objects.create(temp=float(data))
+    print("//*//*//*//")
 
 
 try:
