@@ -33,11 +33,11 @@ def dash2(request):
     #     dataa.append(i.temp)
     #
     all = opensnz.objects.all()
-    print("all",all)
+    # print("all",all)
     for i in all:
         labels.append((i.dt).strftime("%Y-%m-%d %H:%M:%S"))
-        print("labels", labels)
-        dataa.append(i.temp)
+        # print("labels", labels)
+        # dataa.append(i.temp)
         # x=i.dt
         #
         # for_js = int(time.mktime(x.timetuple())) * 1000
