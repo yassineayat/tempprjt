@@ -9,7 +9,7 @@ class opensnz(models.Model):
         return str(self.temp)
 
     def save(self, *args, **kwargs):
-        if self.temp > 13:
+        if self.temp > 40:
             send_mail(
                 'température dépasse la normale,' + str(self.temp),
                 'anomalie dans la machine le,' + str(self.dt),

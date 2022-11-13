@@ -5,6 +5,7 @@ from application import views, api
 urlpatterns = [
 
     path('', views.dash,name="acc"),
+    path('e', views.dash2,name="e"),
 
 
 ##api
