@@ -8,13 +8,13 @@ class opensnz(models.Model):
     def __str__(self):
         return str(self.temp)
 
-    def save(self, *args, **kwargs):
-        if self.temp > 40:
-            send_mail(
-                'température dépasse la normale,' + str(self.temp),
-                'anomalie dans la machine le,' + str(self.dt),
-                'yassine.ayat@ump.ac.ma',
-                ['yassine1960ayat@gmail.com'],
-                fail_silently=False,
-            )
-        return super().save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     if self.temp > 40:
+    #         send_mail(
+    #             'température dépasse la normale,' + str(self.temp),
+    #             'anomalie dans la machine le,' + str(self.dt),
+    #             'yassine.ayat@ump.ac.ma',
+    #             ['yassine1960ayat@gmail.com'],
+    #             fail_silently=False,
+    #         )
+    #     return super().save(*args, **kwargs)

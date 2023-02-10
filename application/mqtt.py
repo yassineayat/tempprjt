@@ -13,7 +13,7 @@ from application.models import opensnz
 
 def on_connect(client, userdata, flags, rc):
     #print("Connected with result code " + str(rc)) #notify about established connection
-    client.subscribe("app")
+    client.subscribe("apptest")
 
 
 
